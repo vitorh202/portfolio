@@ -1,0 +1,27 @@
+.content {
+    min-height: 90vh;
+    place-items: center;
+}
+
+.content h1{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content  h2{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnlink {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    transition: transform 0.7s ease-in-out;
+    width: 50%;
+}
+
+.btnlink:hover {
+    transform: scale( 1.2 , 1.2 );
+}

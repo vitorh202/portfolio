@@ -1,0 +1,20 @@
+<header fxLayoutAlign="space-between center">
+
+    <div fxLayout="row" fxLayoutGap="20px" style="padding: 8px;">
+        <a routerLink="/">{{'inicio' | translate}}</a>
+        <a routerLink="/sobre">{{'sobre' | translate}}</a>
+    </div> 
+
+    <div fxLayout="row" fxLayoutGap="-50px" fxLayoutAlign="end center">
+
+        <button type="submit" class="btnflag" (click)="languept()"><img src="https://cdn-icons-png.flaticon.com/128/630/630591.png" alt="BR"/></button>
+        <button type="submit" class="btnflag" (click)="langueen()"><img src="https://cdn-icons-png.flaticon.com/128/8281/8281549.png" alt="EN"/></button>  
+        <button type="submit" class="btnflag" *ngIf="!itsplay" (click) = "Playmusic(); ref.play();" ><img src="https://cdn-icons-png.flaticon.com/128/0/375.png" alt="PLAY"/></button> 
+        <button type="submit" class="btnflag" *ngIf="itsplay"  (click) = "Playmusic(); ref.pause();" ><img src="https://cdn-icons-png.flaticon.com/128/16/16427.png" alt="PAUSE"/></button> 
+
+    </div>
+
+</header>
+
+
+<audio src="../../../assets/res/music.mp3" typeof="audio/mp3" loop="" #ref [volume]="0.2"></audio>
