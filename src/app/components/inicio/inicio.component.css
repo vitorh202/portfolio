@@ -13,6 +13,11 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.content p {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .btnlink {
     border: none;
     cursor: pointer;
@@ -24,4 +29,8 @@
 
 .btnlink:hover {
     transform: scale( 1.2 , 1.2 );
+}
+
+.alerticon {
+    width: 15%;
 }
